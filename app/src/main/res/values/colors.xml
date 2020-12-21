@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#28b5d3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#666666</color>
+    <color name="et_line">#f7f7f7</color>
+    <color name="colornew">#83ccdc</color>
+    <color name="round_bg_color">#55FFFFFF</color>
+    <color name="hint_color">#FFFFFF</color>
+    <color name="button_text_color">#28b5d3</color>
+    <color name="nav_drawer_item">#f28D7D</color>
+    <color name="black">#fe000000</color>
+    <color name="blue">#28b5d3</color>
+    <color name="white">#ffffff</color>
+    <color name="header_bg">#333333</color>
+    <color name="bt_text">#000</color>
+    <color name="light_gray_bg">#E6E6E6</color>
+    <color name="list_divider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+    <color name="course_bg">#b6e9fc</color>
+    <color name="green">#118638</color>
+    <color name="black_color">#000000</color>
+    <color name="app_bg_color">#2b3e4f</color>
+    <color name="green_btn">#34cc67</color>
+    <color name="orange_pack">#fc5635</color>
+
+</resources>

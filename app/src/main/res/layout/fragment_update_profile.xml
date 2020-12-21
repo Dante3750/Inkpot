@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragthree"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/pad_10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <Button
+                android:id="@+id/btn_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"/>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_10"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_user_name"
+                    style="@style/AppTheme.edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_middle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Middle Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_mob_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/sp_profile_state"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/sp_profile_university"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/sp_profile_college"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/sp_profile_course"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_10"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_parentname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Guardian Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_10"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_parent_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:backgroundTint="@color/black">
+
+                <EditText
+                    android:id="@+id/et_profile_parent_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsize15"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_marginTop="@dimen/btn_update_profile_padding_top"
+                android:id="@+id/btn_profile_submit"
+                android:layout_width="@dimen/btn_update_profile_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_rectangle_blue"
+                android:text="Update Profile"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize15" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

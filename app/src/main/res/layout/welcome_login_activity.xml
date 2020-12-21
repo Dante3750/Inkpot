@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="2">
+
+    <!--Inkpot Logo Image-->
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_weight="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo" />
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.9"
+        android:id="@+id/login_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Sign In Name and Password fields along with Type-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/layout_login"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_trans_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/pad_10">
+
+                <!--UserID-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="@dimen/icon_pad"
+                        android:src="@drawable/user_icon" />
+
+                    <!--  Email Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_login_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:theme="@style/WhiteStyle">
+
+                        <EditText
+                            android:id="@+id/et_login_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_user_id"
+                            android:maxLines="1"
+                            android:inputType="textEmailAddress"
+                            android:textSize="@dimen/nor_text_size" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <!--UserPassword-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="@dimen/icon_pad"
+                        android:src="@drawable/key_icon" />
+
+                    <!--  Password Label -->
+                    <android.support.design.widget.TextInputLayout
+
+                        android:id="@+id/til_login_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:theme="@style/WhiteStyle"
+                        app:passwordToggleTint="@color/white">
+
+                        <EditText
+                            android:id="@+id/et_login_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_pass"
+                            android:maxLines="1"
+                            android:inputType="textPassword"
+                            android:imeActionId="@+id/pass_toggle_action"
+                            android:textSize="@dimen/nor_text_size" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="@dimen/icon_pad"
+                        android:src="@drawable/type_icon" />
+
+                    <Spinner
+
+                        android:id="@+id/sp_user_type"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overlapAnchor="false"
+                        android:backgroundTint="@color/white"
+                        android:padding="@null" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/bt_login"
+                    style="@style/bt_style"
+                    android:layout_marginTop="@dimen/logo_top_mar"
+                    android:text="login"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_login_btn"
+                    android:textColor="@color/button_text_color"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/pad_10"
+                    android:weightSum="3"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="@dimen/pad_10"
+                        android:layout_weight="1.5"
+                        android:id="@+id/tv_login_forgotlink"
+                        android:layout_marginTop="@dimen/logo_top_mar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Forget Password"
+                        android:textColor="@color/hint_color"/>
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:id="@+id/tv_login_reglink"
+                        android:layout_marginTop="@dimen/logo_top_mar"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_no_account"
+                        android:textColor="@color/hint_color"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        Forget Password Page
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/layout_forgetpass"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_trans_bg"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/nor_pad">
+
+                <TextView
+                    android:textSize="@dimen/tv_already_account"
+                    android:gravity="center"
+                    android:textColor="@color/et_line"
+                    android:text="@string/forget_pass_texthead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:textSize="@dimen/heading_size_forget"
+                    android:gravity="center"
+                    android:textColor="@color/et_line"
+                    android:text="@string/forget_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_forget_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/et_line"
+                    android:textColorHint="@color/hint_color"
+                    app:theme="@style/WhiteStyle">
+                    <EditText
+                        android:id="@+id/et_forget_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_user_email"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/nor_text_size" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/bt_forget"
+                    style="@style/bt_style"
+                    android:layout_marginTop="@dimen/logo_top_mar"
+                    android:text="Send Password"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_login_btn"
+                    android:textColor="@color/button_text_color"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

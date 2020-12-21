@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_bg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_course"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tv_nomycourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Courses Available"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+</RelativeLayout>

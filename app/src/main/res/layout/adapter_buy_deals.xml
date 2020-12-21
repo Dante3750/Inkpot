@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/pad_5"
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="@dimen/textsize15"
+                />
+
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_toRightOf="@id/imageview"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_below="@id/text1"
+                android:layout_toRightOf="@id/imageview"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/quantitytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty:"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imageview"
+                android:layout_below="@id/text2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/quantitytext"
+                android:layout_below="@id/text2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                > </Spinner>
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/pricetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textColor="@color/black"
+                android:layout_below="@id/quantitytext"
+                android:layout_toRightOf="@id/imageview"
+                android:layout_marginLeft="5dp"
+                />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/pricetextvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_below="@id/quantitytext"
+                android:layout_toRightOf="@id/pricetext"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/totalpricetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textColor="@color/black"
+                android:layout_below="@id/pricetext"
+                android:layout_toRightOf="@id/imageview" />
+
+
+
+            <TextView
+                android:id="@+id/rupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" \u20B9"
+                android:textColor="@color/black"
+                android:layout_below="@id/pricetextvalue"
+                android:layout_toRightOf="@id/totalpricetext"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/totalpricetextvaluesecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_below="@id/pricetextvalue"
+                android:layout_toRightOf="@id/rupee"
+                android:layout_marginLeft="5dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/spinnertextvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/couponid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333333"/>
+
+</LinearLayout>

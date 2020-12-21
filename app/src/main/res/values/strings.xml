@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Inkpot</string>
+    <string name="hint_user_id">User ID</string>
+    <string name="hint_user_pass">Password</string>
+    <string name="forget_pass_texthead">Forget Your Password</string>
+    <string name="hint_user_repass">Re-Enter Password</string>
+    <string name="hint_user_email">Email</string>
+    <string name="forget_text">Enter Your Email Below To Receive Your Password Rest Instructions</string>
+    <string name="hint_user_mobile">Mobile</string>
+    <string name="hint_user_name">First Name</string>
+    <string name="hint_user_mname">Middle Name</string>
+    <string name="hint_user_lname">Last Name</string>
+    <string name="hint_pass">Password</string>
+    <string name="et_hint_enter_otp">Enter Otp</string>
+    <string name="otp_text">Sit back &amp; Relax!While we Verify your mobile number</string>
+    <string name="tv_no_account">No account yet? Create one</string>
+    <string name="tv_already_account">Already a member? Login</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="sample_string">"Online Coaching \n Guru"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_list">User List</string>
+    <string name="title_activity_chat">Chat Activity</string>
+    <string name="title_activity_subject">SubjectActivity</string>
+    <string name="section_format">Hello World from section: </string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_unit_detail">UnitDetailActivity</string>
+    <string name="explanation">
+        This app demonstrates how to implement Direct Share. Use some other app and share a text.
+        For your convenience, you can also use the input below to share the text.
+    </string>
+    <string name="hello">Hello!</string>
+    <string name="share">Share</string>
+    <string name="send_intent_title">Send a message via:</string>
+
+    <!-- SendMessageActivity -->
+
+    <string name="sending_message">Sending a message</string>
+    <string name="to">To:</string>
+    <string name="send">Send</string>
+    <string name="body">Body:</string>
+    <string name="hint_body">Edit your message.</string>
+    <string name="message_sent">Sent a message \"%1$s\" to %2$s.</string>
+    <string name="text_to_share">Text to share</string>
+    <string name="start">GOT IT</string>
+    <string name="next">NEXT</string>
+
+</resources>

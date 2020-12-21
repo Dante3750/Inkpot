@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "74396874790",
+    "firebase_url": "https://inkpotonline-53942.firebaseio.com",
+    "project_id": "inkpotonline-53942",
+    "storage_bucket": "inkpotonline-53942.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74396874790:android:71dac143978949aa",
+        "android_client_info": {
+          "package_name": "com.onlineinkpot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74396874790-o4rneiau6rq3bnvln44r8lntd2mubo4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onlineinkpot",
+            "certificate_hash": "56442235226c770bff0cdb6df1e73954c629f22a"
+          }
+        },
+        {
+          "client_id": "74396874790-p21mjq8o4ugqnuigmjhdbakgn3endto1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3QAA1ANjE-FRaB7naJHiWHyTSOKcKEq8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74396874790-p21mjq8o4ugqnuigmjhdbakgn3endto1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

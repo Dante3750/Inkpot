@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+   <!--<ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:id="@+id/progressbar"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+       android:layout_marginTop="200dp"
+       />
+-->
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/linear10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/textsize15"
+  android:visibility="visible"  >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_test"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/pad_20"
+            android:background="@drawable/bg_rectangle_blue">
+            <ImageView
+                android:id="@+id/test_img"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/test_icon"/>
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Take Test"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:scaleX="0.8"
+                android:textSize="18sp"
+                android:layout_toEndOf="@+id/test_img"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_rectangle"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_que"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/total_ques" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Total Attempted Question"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/numbertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="270dp"
+                android:layout_height="1dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_bg_color"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                 >
+
+                <ImageView
+                    android:id="@+id/iv_time"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/total_time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Total Time"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="270dp"
+                android:layout_height="1dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_bg_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_marks"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/total_marks" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Total Marks"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="270dp"
+                android:layout_height="1dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/textsize15"
+                android:layout_marginTop="10dp"
+                android:background="@color/app_bg_color" />
+
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/notetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No questions are available.Please select another toast"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+           android:textSize="15dp"
+            android:visibility="gone"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/startquizbtn"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Quiz"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_rectangle"
+            android:backgroundTint="@color/blue"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_free_test_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="No Test Available"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+
+</LinearLayout>

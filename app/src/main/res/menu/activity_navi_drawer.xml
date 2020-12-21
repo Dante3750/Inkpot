@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/drawer_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/dashboard_man"
+            android:title="My Profile" />
+        <item
+            android:icon="@drawable/dashboard_progress"
+            android:id="@+id/nav_progress"
+            android:title="Progress Page" />
+        <item
+            android:icon="@drawable/dashboard_course"
+            android:id="@+id/nav_mycourse"
+            android:title="My Course" />
+        <item
+            android:icon="@drawable/ic_wallet"
+            android:id="@+id/nav_wallet"
+            android:title="Wallet" />
+
+        <item
+            android:icon="@drawable/dashboard_mcq"
+            android:id="@+id/nav_mcq"
+            android:title="MCQ" />
+        <item
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/dashboard_noti"
+            android:id="@+id/nav_notification"
+            android:title="Notification" />
+
+
+        <item
+            android:icon="@drawable/dashboard_offer"
+            android:id="@+id/nav_offer"
+            android:title="Offer" />
+
+        <item
+            android:icon="@drawable/dashboard_order"
+            android:id="@+id/nav_order"
+            android:title="Order History" />
+        <item
+            android:icon="@drawable/dashboard_offer"
+            android:id="@+id/nav_promo"
+            android:title="Refer and Earn" />
+
+        <item
+            android:icon="@drawable/dashboard_shareapp"
+            android:id="@+id/nav_share"
+            android:title="Share APP" />
+
+
+        <item
+            android:visible="false"
+            android:icon="@drawable/dashboard_shareapp"
+            android:id="@+id/nav_free_video"
+            android:title="Free Video" />
+
+        <item
+            android:icon="@drawable/dashboard_logout"
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

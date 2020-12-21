@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/pack_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/bg_rectangle_basic"
+                android:backgroundTint="#55FFFFFF"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_Basic"
+                    android:padding="15dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BASIC"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:paddingBottom="5dp"
+                    android:background="@color/blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VIDEOS + PDFs + MCQs + DOUBTS "
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/tv_Basic_Subject"
+                    android:padding="7dp"
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Microeconomics"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/tv_Basic_Duration"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total for 6 Months"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_rupee_symbol"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_alignEnd="@id/tv_rupee_symbol"
+                        android:id="@+id/tv_Basic_Price"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "9,000/-"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_Basic_Buy"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/green_btn"
+                    android:background="@drawable/bg_rectangle"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:text="BUY"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_combo"
+                android:background="@drawable/bg_rectangle_basic"
+                android:backgroundTint="#55FFFFFF"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_Combo"
+                    android:padding="15dp"
+                    android:paddingTop="5dp"
+                    android:background="@color/orange_pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMBO"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:paddingBottom="5dp"
+                    android:background="@color/orange_pack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VIDEOS + PDFs + MCQs + DOUBTS "
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/tv_Combo_Subject"
+                    android:padding="7dp"
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Microeconomics + Microeconomics"
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/tv_Combo_Duration"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total for 6 Months"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"/>
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_rupee_combo"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 "
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_alignEnd="@id/tv_rupee_symbol"
+                        android:id="@+id/tv_Combo_Price"
+                        android:paddingBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "9,000/-"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btn_Combo_buy"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/green_btn"
+                    android:background="@drawable/bg_rectangle"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:text="BUY"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+

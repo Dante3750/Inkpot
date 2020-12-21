@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="#fc5635"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_userProfile"
+        android:layout_marginTop="@dimen/textsize15"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/circle_profile_pic" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/logo_top_mar"
+        android:text="firstname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <TextView
+        android:layout_marginLeft="@dimen/cor_pad"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/logo_top_mar"
+        android:text="lastname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email@android.com" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Wallet Amount:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tv_wallet"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

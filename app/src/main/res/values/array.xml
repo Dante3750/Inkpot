@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="login_type">
+        <item>Select Type:</item>
+        <item>Student</item>
+        <item>Mentor</item>
+        <item>Teacher</item>
+    </string-array>
+
+</resources>

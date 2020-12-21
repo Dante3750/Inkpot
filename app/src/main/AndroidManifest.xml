@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onlineinkpot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".activity.WelcomeSplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WelcomeLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.WelcomeRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ChatUserListActivity"
+            android:label="@string/title_activity_user_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.FCMIntentService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.BuyPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyOrderSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:parentActivityName=".activity.ChatUserListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.GraduationActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DetailActivitySemester"
+            android:label="@string/title_activity_subject"
+            android:parentActivityName=".activity.GraduationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DetailActivityUnit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommingSoon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetailPlayerActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_unit_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.BuyContentDescription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyContentActivity"
+            android:parentActivityName=".activity.BuyContentDescription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyDealsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.DetailFreeVideoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.BuyOrderFailureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyPayUmoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuizSubjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuizActivitySubject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionActivitySubject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuizResultActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuizSolutionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuizActivityChapter"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.QuizChapterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.QuestionActivityChapter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuizActivityUnit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionActivityUnit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuizActivityTopic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QuestionActivityTopic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotificationDetailActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".activity.QuizSolutionSecondActivity"
+            android:screenOrientation="portrait" />
+
+
+
+
+
+        <activity
+            android:name=".activity.BuyPaymentActivityDitto"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.InkpotPlayerHLS"/>
+    </application>
+
+</manifest>

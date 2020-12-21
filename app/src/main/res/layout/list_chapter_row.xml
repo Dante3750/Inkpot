@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_subject"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_bg"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/rl_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_topic_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/iv_cart_sub"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_marginTop="@dimen/pad_10"
+                android:id="@+id/tv_topic_name"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:text="chapter"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:id="@+id/tv_topic_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_free_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_topic_arrow_down"
+            android:paddingRight="25dp"
+            android:src="@drawable/ic_free_video"
+            android:tint="@color/hint_color"/>
+
+
+        <TextView
+            android:id="@+id/tv_free_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_topic_arrow_down"
+            android:padding="8dp"
+            android:background="@drawable/bg_rectangle_shadow"
+            android:text="Free Video"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize12"
+            android:textColor="#FFFFFF" />
+
+
+
+        <ToggleButton
+            android:id="@+id/tv_topic_arrow_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_arrow"
+            android:padding="5dp"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

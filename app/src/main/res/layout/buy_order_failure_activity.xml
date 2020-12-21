@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center_horizontal"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/textsize10"
+        android:layout_marginRight="@dimen/textsize10"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rectangle_border"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_cancel"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+                android:text="Failure"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="@dimen/small"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black_color"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Due to some reason your transaction is failure "/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/failure_continue_shoping_rl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_color"
+        >
+        <TextView
+            android:id="@+id/tv_conti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize22"
+            android:textColor="@color/white"
+            android:text="Continue Shoping"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
